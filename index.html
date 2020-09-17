@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>AI Localism | The GovLab</title>
+
+  <link href="/images/favicon.ico" rel="shortcut icon">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://use.typekit.net/kad3hcl.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script src="https://unpkg.com/@directus/sdk-js@5.3.4/dist/directus-sdk.umd.min.js"></script>
+  <script src="https://kit.fontawesome.com/f713a12e61.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body class="homepage" onwheel="scroll_dismiss()">
+
+  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+
+
+  <!-- Top Navigation Menu -->
+  <div class="topnav">
+    <div class="menu-bars">
+      <div class="bar-wrap">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
+    <a class="top_logo" href="#home"><img src="images/govlab-logo-white.png" alt="The GovLab"></a>
+    <!-- Navigation links (hidden by default) -->
+    <div class='lang-select'>
+
+    </div>
+  </div>
+  <div id="myLinks">
+    <div class="menu-items">
+      <div class="menu-sub"><a href="#">Home</a></div>
+      <div class="menu-sub"><a href="about.html">About</a></div>
+      <div class="menu-sub"> <a href="#topics">Topic</a></div>
+      <div class="menu-sub"><a href="team.html">Team</a></div>
+    </div>
+  </div>
+  <div class="row top-section">
+    <div class="column large-12 site-logo__wrapper">
+      <a href="/index.html"><img class="site-logo" src="images/ai-localism-logo.png"
+          alt="Smarter Crowdsourcing | Zika Logo"></a>
+    </div>
+  </div>
+  <div class="row align-center">
+    <section class="imagine-banner">
+      <h2>The Responsible Use and Design of Artificial Intelligence at the Local Level </h2>
+    </section>
+
+  </div>
+  <!-- <div class="main-buttons">
+    <a href="files/sc_problem_catalogue_en.pdf" class="button home-btn" target="_blank">DOWNLOAD THE PROBLEM CATALOGUE</a>
+  </div> -->
+
+
+  <section class="dark-section">
+    <div class="row">
+      <div class="column left">
+        <p>Artificial Intelligence is here, and here to stay. At the most basic level, AI denotes the application of
+          (self-learning) algorithms to large data sets. For years now, AI has aroused both fear and excitement, yet
+          its ultimate impact will be determined by us and the governance frameworks we build.</p>
+      </div>
+      <div class="column right">
+        <p><a
+            href="https://www.project-syndicate.org/commentary/local-regulation-of-artificial-intelligence-uses-by-stefaan-g-verhulst-1-and-mona-sloane-2020-02?barrier=accesspaylog"
+            target="_blank">AI Localism</a>, a term coined by Stefaan Verhulst and Mona Sloane, refers to the actions
+          taken by local decision-makers to address the use of AI within a city or community. AI Localism has often
+          emerged because of gaps left by incomplete state, national or global governance frameworks.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="overlap-box">
+    <p>AI Localism offers both <b>immediacy</b> and <b>proximity</b>. Because it is managed within tightly defined
+      geographic regions, it affords policymakers a <b>better understanding of the tradeoffs involved</b>. By
+      calibrating algorithms and AI policies for local conditions, policymakers have a better chance of <b>creating
+        positive feedback loops</b> that will result in greater effectiveness and accountability.</p>
+  </div>
+  <div class="text-box">
+    <p>The speed and scale at which AI is deployed is an uncharted territory, and policy is not caught up. Our
+      insufficiency of knowledge and regulation have led to mistrust, and irresponsible behavior. The concerns are
+      valid, but their legitimacy should spur us not to cast aside or reject AI. Instead, these concerns can be used to
+      understand its potentials and pitfalls and develop new forms of governance.</p>
+  </div>
+  <div class="divider" id="about">
+
+    <h1>What we do</h1>
+  </div>
+  <div class="row">
+    <div class="column-3">
+      <img src="images/map.png">
+      <h4>MAPPING</h4>
+      <p>
+        Mapping the current state of AI Localism around the world. Providing rigorous insight in an emerging phenomenon.
+      </p>
+    </div>
+    <div class="column-3 center">
+      <img src="images/analyze.png">
+      <h4>ANALYSIS</h4>
+      <p>
+        Analyzing what works, and what doesn't and why? Developing an evidence-base of AI Localism.
+      </p>
+    </div>
+    <div class="column-3">
+      <img src="images/guide.png">
+      <h4>GUIDANCE</h4>
+      <p>
+        Guiding local leaders towards responsible AI implementation and governance innovation. Training the next
+        generation of AI leaders at the local level.
+      </p>
+    </div>
+  </div>
+  <div class="divider" id="about">
+
+    <h1>Current Projects and Recent Publications</h1>
+  </div>
+  <div class="row projects">
+    <div class="column-3">
+<img src="images/partners/TUM.png">
+<br><br>
+<img src="images/partners/uni-melboure.png">
+    </div>
+    <div class="column-6">
+      <h2>The Ethics and Practice of AI Localism at a time of COVID-19 and beyond</h2>
+      <p>To fight against COVID-19, companies and cities alike have quickly developed or repurposed AI technologies, such
+      as temperature, mask, and social distance detection or smartphone tracking to monitor disease spread. While these
+      uses seem crucial for the current global crisis, implementation roadblocks have exposed the gaps in AI regulation.
+      This comparative review of current practices worldwide seeks to gain a better understanding of successful AI
+      Localism in the context of COVID-19 as to inform and guide local leaders and city officials towards best
+      practices.</p>
+    </div>
+  </div>
+  <div class="divider" id="about">
+    <h1>Program Leads</h1>
+  </div>
+  <div id="leads" class="faculty">
+    <div class="team">
+      <div class="team-image">
+        <div class="square">
+          <img src="images/team/stefaan-verhulst.jpg">
+        </div>
+        <h4>Stefaan Verhulst</h4>
+        <h5>Co-Founder and Chief R&D Officer<br>The GovLab</h5>
+        <a href="http://www.thegovlab.org/team.html#stefaan-verhulst" target="_blank"><span id="bio">BIO</span></a>
+      </div>
+      <div class="team-image">
+        <div class="square">
+          <img src="images/team/mona-sloane.jpg">
+        </div>
+        <h4>Mona Sloane</h4>
+        <h5>Post-Graduate Fellow, The GovLab</h5>
+        <a href="http://www.thegovlab.org/team.html#mona-sloane" target="_blank"><span id="bio">BIO</span></a>
+      </div>
+    </div>
+    <div class="other-team team">
+      <div class="team-image">
+        <div class="square">
+          <img src="images/team/andrew-young.jpg">
+        </div>
+        <h4>Andrew Young</h4>
+        <h5>Knowledge Director, The GovLab</h5>
+        <a href="http://www.thegovlab.org/team.html#andrew-young" target="_blank"><span id="bio">BIO</span></a>
+      </div>
+      <div class="team-image">
+        <div class="square">
+          <img src="images/team/michelle-winowatan.jpg">
+        </div>
+        <h4>Michelle Winowatan</h4>
+        <h5>Research Fellow, The GovLab</h5>
+        <a href="http://www.thegovlab.org/team.html#michelle-winowatan" target="_blank"><span id="bio">BIO</span></a>
+      </div>
+      <div class="team-image">
+        <div class="square">
+          <img src="images/team/andrew-young.jpg">
+        </div>
+        <h4>Jaimee Dellipoali</h4>
+        <h5>Research Assistant, The GovLab</h5>
+        <a href="http://www.thegovlab.org/team.html" target="_blank"><span id="bio">BIO</span></a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-row">
+      <div class="footer-col">
+          <h4>CONTACT US</h4>
+          <p>The GovLab <br> NYU Tandon School of Engineering<br>2 MetroTech Center, 9th Floor<br>Brooklyn, NY 11201</p>
+      </div>
+      <div class="footer-col">
+        <h4><br></h4>
+          <p><i class="e-social-media-item fa fa-phone"></i>&nbsp (646) 997-3150</p>
+          <a><i class="e-social-media-item fa fa-envelope"></i>&nbsp info@thegovlab.org</a>
+      </div>
+      <div class="footer-col">
+          <h4>FOLLOW US</h4>
+          <a href="https://twitter.com/TheGovLab" target="_blank"><i class="e-social-media-item fa fa-twitter" aria-hidden="true"></i></a>
+          <a href="https://www.facebook.com/thegovlab/" target="_blank"><i class="e-social-media-item fa fa-facebook" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/company/3288504" target="_blank"><i class="e-social-media-item fa fa-linkedin" aria-hidden="true"></i></a>
+      </div>
+    </div>
+    <div class="footer-row privacy-statement">
+  <p>The GovLab is committed to respecting your privacy and abides by all the practices and principles outlined by New York University in its Digital Privacy Statement. For more information, please review the full statement <a href="https://www.nyu.edu/footer/copyright-and-fair-use/digital-privacy-statement.html" target="_blank">here.</a></p>
+    </div>
+  </footer>
+  <div class="copyright">
+    <div class="row">
+      <div class="column">
+        <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+          <img class="copyright_cc-badge" alt="Creative Commons License"
+            src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
+        <p>&nbspThis work is licensed under a</p>&nbsp<a rel="license"
+          href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0
+          International License.</a>.
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+  /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+  function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+</script>
+<script>
+  /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+  function scroll_dismiss() {
+    if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      }
+    }
+  }
+</script>
+
+<script src='https://unpkg.com/vue@2.0.3/dist/vue.js'></script>
+<script src="https://unpkg.com/vue-meta/dist/vue-meta.min.js"></script>
+<script src="js/zika.js"></script>
+
+</html>
