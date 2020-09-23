@@ -13,7 +13,7 @@
   --grey2: rgba(0, 0, 0, 0.2);
   --grey05: rgba(0, 0, 0, 0.05);
   --solid-grey: #3d3d3d;
-  font-size: 16px;
+  font-size: 18px;
 }
 body {
   margin: 0;
@@ -360,6 +360,12 @@ color: white;
  @media screen and (min-width: 320px) and (max-width: 768px){
    .row{
      flex-direction: column;
+   }
+   .row.projects{
+    flex-direction: column-reverse;
+   }
+   .row.article{
+     text-align: center;
    }
    .overlap-box{
      margin:0;
@@ -820,6 +826,9 @@ footer .row{
 .row.projects{
   padding: 3rem 0;
 }
+.row.article{
+  background-color: var(--secondary-color);
+}
 .column-6{
   width:66%;
   display: flex;
@@ -836,6 +845,21 @@ footer .row{
   text-transform: uppercase;
   margin:0;
 }
+.column-6.article{
+padding-left: 12rem;
+text-align: left;
+align-items: flex-start !important; 
+justify-content: flex-start !important; ;
+}
+.column-6.article h2{
+  color: #ffffff;
+}
+.column-6.article p{
+  color: #ffffff;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-top:0;
+}
 .column-6 p{
   color: var(--secondary-color);
   line-height: 1.5;
@@ -843,12 +867,32 @@ footer .row{
 .column-3 img{
   height: 80px;
 }
+.column-3.article img{
+  height: 180px;
+}
 .column-3 h4{
   margin: 5px 0;
   color: var(--secondary-color);
 }
 .column-3 p{
   color: var(--secondary-color);
+}
+.column-6.article a{
+  padding: 10px 20px;
+  background-color: var(--grey5);
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 0.8rem;
+}
+.column-6.article a:hover{
+  background-color: var(--grey9);
+  color: var(--accent-color);
+  transition: all .6s ease;
+}
+.column-6.article #authors{
+  color: var(--accent-color);
+  font-weight: 600;
+
 }
 .faculty .sub{
   font-size: 1.2rem;
@@ -1028,6 +1072,12 @@ color: #ffffff;
   color: var(--accent-color);
 }
 @media screen and (min-width: 320px) and (max-width: 768px){
+  .column-6.article{
+    padding-left: 0rem;
+    text-align: center;
+    align-items: center !important; 
+    justify-content: center !important; ;
+    }
   .team{
     flex-direction: column;
     margin: 1rem 1rem;
