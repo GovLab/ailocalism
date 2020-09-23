@@ -731,6 +731,7 @@ text-align: left;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   height:9vh;
 }
 
@@ -1078,6 +1079,12 @@ color: #ffffff;
     align-items: center !important; 
     justify-content: center !important; ;
     }
+    .column-6{
+
+      text-align: center;
+      align-items: center !important; 
+      justify-content: center !important; ;
+      }
   .team{
     flex-direction: column;
     margin: 1rem 1rem;
