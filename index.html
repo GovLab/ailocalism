@@ -19,6 +19,23 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
+<div id="alert-msg" class="alert">
+  <div class="alert-content">
+    <div class="alert-col thumb">
+      <img src="images/thumb.jpg">
+    </div>
+    <div class="alert-col text-body">
+      <p class="text-alert"><span id="sub-text">"Realizing the Potential of AI Localism" by Stefaan Verhulst and Mona Sloane in Project Syndicate. <br><a
+        href="https://www.project-syndicate.org/commentary/local-regulation-of-artificial-intelligence-uses-by-stefaan-g-verhulst-1-and-mona-sloane-2020-02?barrier=accesspaylog"
+        id="text-link" target="_blank">Click here</a> to read the full article.</span></p>
+    </div>
+    <div class="alert-col dismiss">
+      <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    </div>
+
+
+  </div>
+</div>
 
 <body class="homepage" onwheel="scroll_dismiss()">
 
@@ -42,11 +59,11 @@
   </div>
   <div id="myLinks">
     <div class="menu-items">
-      <div class="menu-sub"><a href="#">Home</a></div>
-      <div class="menu-sub"><a href="#about">About</a></div>
-      <div class="menu-sub"> <a href="#projects">Projects and Publications</a></div>
-      <div class="menu-sub"><a href="#whatwedo">What We Do</a></div>
-      <div class="menu-sub"><a href="#team">Team</a></div>
+      <div class="menu-sub" onclick="dismiss_menu()"><a href="#">Home</a></div>
+      <div class="menu-sub" onclick="dismiss_menu()"><a href="#about">About</a></div>
+      <div class="menu-sub" onclick="dismiss_menu()"> <a href="#projects">Projects and Publications</a></div>
+      <div class="menu-sub" onclick="dismiss_menu()"><a href="#whatwedo">What We Do</a></div>
+      <div class="menu-sub" onclick="dismiss_menu()"><a href="#team">Team</a></div>
     </div>
   </div>
 
@@ -63,40 +80,57 @@
     </section>
 
   </div>
-  <!-- <div class="main-buttons">
-    <a href="files/sc_problem_catalogue_en.pdf" class="button home-btn" target="_blank">DOWNLOAD THE PROBLEM CATALOGUE</a>
-  </div> -->
-
 
   <section id="about" class="dark-section">
     <div class="row">
-      <div class="column left">
+      <div class="column left image-col top">
+
+      </div>
+      <div class="column right">
         <p>Artificial Intelligence is here, and here to stay. At the most basic level, AI denotes the application of
           (self-learning) algorithms to large data sets. For years now, AI has aroused both fear and excitement, yet
           its ultimate impact will be determined by us and the governance frameworks we build.</p>
       </div>
-      <div class="column right">
-        <p><a
-            href="https://www.project-syndicate.org/commentary/local-regulation-of-artificial-intelligence-uses-by-stefaan-g-verhulst-1-and-mona-sloane-2020-02?barrier=accesspaylog"
-            target="_blank">AI Localism</a>, a term coined by Stefaan Verhulst and Mona Sloane, refers to the actions
-          taken by local decision-makers to address the use of AI within a city or community. AI Localism has often
-          emerged because of gaps left by incomplete state, national or global governance frameworks.</p>
-      </div>
     </div>
   </section>
 
-  <div class="overlap-box">
-    <p>AI Localism offers both <b>immediacy</b> and <b>proximity</b>. Because it is managed within tightly defined
-      geographic regions, it affords policymakers a <b>better understanding of the tradeoffs involved</b>. By
-      calibrating algorithms and AI policies for local conditions, policymakers have a better chance of <b>creating
-        positive feedback loops</b> that will result in greater effectiveness and accountability.</p>
-  </div>
+
   <div class="text-box">
-    <p>The speed and scale at which AI is deployed is an uncharted territory, and policy is not caught up. Our
-      insufficiency of knowledge and regulation have led to mistrust, and irresponsible behavior. The concerns are
-      valid, but their legitimacy should spur us not to cast aside or reject AI. Instead, these concerns can be used to
-      understand its potentials and pitfalls and develop new forms of governance.</p>
+    <p><a
+        href="https://www.project-syndicate.org/commentary/local-regulation-of-artificial-intelligence-uses-by-stefaan-g-verhulst-1-and-mona-sloane-2020-02?barrier=accesspaylog"
+        target="_blank">AI Localism</a>, a term coined by Stefaan Verhulst and Mona Sloane, refers to the actions
+      taken by local decision-makers to address the use of AI within a city or community. AI Localism has often
+      emerged because of gaps left by incomplete state, national or global governance frameworks.</p>
   </div>
+
+
+  <section class="dark-section">
+    <div class="row">
+      <div class="column left image-col">
+
+      </div>
+      <div class="column right">
+        <p>AI Localism offers both <b>immediacy</b> and <b>proximity</b>. Because it is managed within tightly defined
+          geographic regions, it affords policymakers a <b>better understanding of the tradeoffs involved</b>. By
+          calibrating algorithms and AI policies for local conditions, policymakers have a better chance of <b>creating
+            positive feedback loops</b> that will result in greater effectiveness and accountability.</p>
+      </div>
+    </div>
+  </section>
+  <section class="dark-section">
+    <div class="row">
+      <div class="column left">
+        <p>The speed and scale at which AI is deployed is an uncharted territory, and policy is not caught up. Our
+          insufficiency of knowledge and regulation have led to mistrust, and irresponsible behavior. The concerns are
+          valid, but their legitimacy should spur us not to cast aside or reject AI. Instead, these concerns can be used
+          to
+          understand its potentials and pitfalls and develop new forms of governance.</p>
+      </div>
+      <div class="column right image-col">
+
+      </div>
+    </div>
+  </section>
   <div class="divider" id="whatwedo">
 
     <h1>What we do</h1>
@@ -131,18 +165,21 @@
   </div>
   <div class="row projects">
     <div class="column-3">
-<img src="images/partners/TUM.png">
-<br><br>
-<img src="images/partners/uni-melboure.png">
+      <img src="images/partners/TUM.png">
+      <br><br>
+      <img src="images/partners/uni-melboure.png">
     </div>
     <div class="column-6">
       <h2>The Ethics and Practice of AI Localism at a time of COVID-19 and beyond</h2>
-      <p>To fight against COVID-19, companies and cities alike have quickly developed or repurposed AI technologies, such
-      as temperature, mask, and social distance detection or smartphone tracking to monitor disease spread. While these
-      uses seem crucial for the current global crisis, implementation roadblocks have exposed the gaps in AI regulation.
-      This comparative review of current practices worldwide seeks to gain a better understanding of successful AI
-      Localism in the context of COVID-19 as to inform and guide local leaders and city officials towards best
-      practices.</p>
+      <p>To fight against COVID-19, companies and cities alike have quickly developed or repurposed AI technologies,
+        such
+        as temperature, mask, and social distance detection or smartphone tracking to monitor disease spread. While
+        these
+        uses seem crucial for the current global crisis, implementation roadblocks have exposed the gaps in AI
+        regulation.
+        This comparative review of current practices worldwide seeks to gain a better understanding of successful AI
+        Localism in the context of COVID-19 as to inform and guide local leaders and city officials towards best
+        practices.</p>
     </div>
   </div>
   <div class="divider" id="about">
@@ -171,53 +208,59 @@
   <div class="divider" id="about">
     <h1>Team</h1>
   </div>
-    <div class="other-team team">
-      <div class="team-image">
-        <div class="square">
-          <img src="images/team/andrew-young.jpg">
-        </div>
-        <h4>Andrew Young</h4>
-        <h5>Knowledge Director, The GovLab</h5>
-        <a href="http://www.thegovlab.org/team.html#andrew-young" target="_blank"><span id="bio">BIO</span></a>
+  <div class="other-team team">
+    <div class="team-image">
+      <div class="square">
+        <img src="images/team/andrew-young.jpg">
       </div>
-      <div class="team-image">
-        <div class="square">
-          <img src="images/team/michelle-winowatan.jpg">
-        </div>
-        <h4>Michelle Winowatan</h4>
-        <h5>Research Fellow, The GovLab</h5>
-        <a href="http://www.thegovlab.org/team.html#michelle-winowatan" target="_blank"><span id="bio">BIO</span></a>
+      <h4>Andrew Young</h4>
+      <h5>Knowledge Director, The GovLab</h5>
+      <a href="http://www.thegovlab.org/team.html#andrew-young" target="_blank"><span id="bio">BIO</span></a>
+    </div>
+    <div class="team-image">
+      <div class="square">
+        <img src="images/team/michelle-winowatan.jpg">
       </div>
-      <div class="team-image">
-        <div class="square">
-          <img src="images/team/andrew-young.jpg">
-        </div>
-        <h4>Jaimee Dellipoali</h4>
-        <h5>Research Assistant, The GovLab</h5>
-        <a href="http://www.thegovlab.org/team.html" target="_blank"><span id="bio">BIO</span></a>
+      <h4>Michelle Winowatan</h4>
+      <h5>Research Fellow, The GovLab</h5>
+      <a href="http://www.thegovlab.org/team.html#michelle-winowatan" target="_blank"><span id="bio">BIO</span></a>
+    </div>
+    <div class="team-image">
+      <div class="square">
+        <img src="images/team/jaimee.jpg">
       </div>
+      <h4>Jaimee Dellipoali</h4>
+      <h5>Research Assistant, The GovLab</h5>
+      <a href="http://www.thegovlab.org/team.html" target="_blank"><span id="bio">BIO</span></a>
+    </div>
   </div>
 
   <footer>
     <div class="footer-row">
       <div class="footer-col">
-          <h4>CONTACT US</h4>
-          <p>The GovLab <br> NYU Tandon School of Engineering<br>2 MetroTech Center, 9th Floor<br>Brooklyn, NY 11201</p>
+        <h4>CONTACT US</h4>
+        <p>The GovLab <br> NYU Tandon School of Engineering<br>2 MetroTech Center, 9th Floor<br>Brooklyn, NY 11201</p>
       </div>
       <div class="footer-col">
         <h4><br></h4>
-          <p><i class="e-social-media-item fa fa-phone"></i>&nbsp (646) 997-3150</p>
-          <a><i class="e-social-media-item fa fa-envelope"></i>&nbsp info@thegovlab.org</a>
+        <p><i class="e-social-media-item fa fa-phone"></i>&nbsp (646) 997-3150</p>
+        <a><i class="e-social-media-item fa fa-envelope"></i>&nbsp info@thegovlab.org</a>
       </div>
       <div class="footer-col">
-          <h4>FOLLOW US</h4>
-          <a href="https://twitter.com/TheGovLab" target="_blank"><i class="e-social-media-item fa fa-twitter" aria-hidden="true"></i></a>
-          <a href="https://www.facebook.com/thegovlab/" target="_blank"><i class="e-social-media-item fa fa-facebook" aria-hidden="true"></i></a>
-          <a href="https://www.linkedin.com/company/3288504" target="_blank"><i class="e-social-media-item fa fa-linkedin" aria-hidden="true"></i></a>
+        <h4>FOLLOW US</h4>
+        <a href="https://twitter.com/TheGovLab" target="_blank"><i class="e-social-media-item fa fa-twitter"
+            aria-hidden="true"></i></a>
+        <a href="https://www.facebook.com/thegovlab/" target="_blank"><i class="e-social-media-item fa fa-facebook"
+            aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/company/3288504" target="_blank"><i class="e-social-media-item fa fa-linkedin"
+            aria-hidden="true"></i></a>
       </div>
     </div>
     <div class="footer-row privacy-statement">
-  <p>The GovLab is committed to respecting your privacy and abides by all the practices and principles outlined by New York University in its Digital Privacy Statement. For more information, please review the full statement <a href="https://www.nyu.edu/footer/copyright-and-fair-use/digital-privacy-statement.html" target="_blank">here.</a></p>
+      <p>The GovLab is committed to respecting your privacy and abides by all the practices and principles outlined by
+        New York University in its Digital Privacy Statement. For more information, please review the full statement <a
+          href="https://www.nyu.edu/footer/copyright-and-fair-use/digital-privacy-statement.html"
+          target="_blank">here.</a></p>
     </div>
   </footer>
   <div class="copyright">
@@ -253,6 +296,21 @@
         x.style.display = "none";
       }
     }
+  }
+</script>
+<script>
+  $(document).ready(function () {
+    var alert_msg = document.getElementById("alert-msg");
+    $(".close").click(function () {
+      alert_msg.style.display = "none";
+    });
+  });
+</script>
+<script>
+  /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+  function dismiss_menu() {
+    var x = document.getElementById("myLinks");
+   x.style.display = "none";
   }
 </script>
 
