@@ -160,11 +160,14 @@ p.text-alert{
     background-color: var(--grey9);
     border-radius: 25px;
   }
+  .alert-content img{
+    height: 60px;
+  }
   .alert-col.thumb{
-    width:55%;
+    width:45%;
   }
   .alert-col.text-body{
-    width: 40%;
+    width: 50%;
   }
   .alert-col.dismiss{
     width:5%;
