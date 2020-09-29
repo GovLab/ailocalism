@@ -834,9 +834,16 @@ text-align: left;
   align-items: center;
   justify-content: center;
   text-align: center;
+  flex-direction: column;
   height:9vh;
 }
 
+#contact.divider{
+  height: 15vh;
+}
+.divider p{
+  margin:0;
+}
 .divider h1{
 margin:0px;
   text-transform: uppercase;
