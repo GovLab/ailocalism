@@ -532,9 +532,9 @@ align-items: center;
   padding: 15px 20px;
   max-width: 350px;
   text-align: center;
-  margin:10px;
+  margin:-20px;
 }
-.home-btn:hover{
+.main-buttons a:hover{
   background-color: var(--theme-color);
   transition: all .6s ease;
 }
