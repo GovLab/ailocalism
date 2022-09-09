@@ -551,7 +551,7 @@ align-items: center;
   padding: 15px 20px;
   max-width: 350px;
   text-align: center;
-  margin:-20px;
+  margin:-20px 10px;
 }
 .main-buttons a:hover{
   background-color: var(--theme-color);
