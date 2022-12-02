@@ -1002,6 +1002,9 @@ justify-content: flex-start !important; ;
 .column-3 img#cai{
   height: 180px;
 }
+.column-3 img#ai-localism-logo{
+  height: 40px;
+}
 .column-3.article img{
   height: 180px;
 }
