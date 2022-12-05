@@ -949,11 +949,11 @@ footer .row{
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  padding: 2.5rem;
+  padding: 1.5rem;
   height: 200px;
 }
 .row.projects{
-  padding: 3rem 0;
+  padding: 1rem 0;
 }
 .row.article{
   background-color: var(--secondary-color);
@@ -965,7 +965,7 @@ footer .row{
   align-items: flex-start !important; 
   justify-content: flex-start !important; ;
   flex-direction: column;
-  padding: 2.5rem;
+  padding: 1.5rem;
   height: 300px;
 }
 .column-6 h2{
