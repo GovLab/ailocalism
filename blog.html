@@ -23,9 +23,9 @@
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://use.typekit.net/kad3hcl.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 
-  <script src="https://unpkg.com/@directus/sdk-js@5.3.4/dist/directus-sdk.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@directus/sdk-js@5.3.4/dist/directus-sdk.umd.min.js"></script>
   <script src="https://kit.fontawesome.com/f713a12e61.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -78,10 +78,10 @@
 
     
       <div class="blog-grid" >
-        <div class="blog-item" v-for="post in post_data" v-if="post.status == 'published'">
+        <div class="blog-item" v-for="post in posts">
           <div class="blog-contents">
           <div class="blog-thumbnail">
-            <div class="img-col" v-if="post.image" :style="{ backgroundImage: 'url(' + post.image.data.full_url+ ')' }"></div>
+            <div class="img-col" v-if="post.image" :style="{ backgroundImage: 'url(' + client.url +'/assets/' +post.image.id+ ')' }"></div>
           </div>
           <div class="blog-text">
             <div class="blog-text-body">
@@ -184,8 +184,8 @@
 
 
 
-<script src='https://unpkg.com/vue@2.0.3/dist/vue.js'></script>
-<script src="https://unpkg.com/vue-meta/dist/vue-meta.min.js"></script>
+<script src='https://cdn.jsdelivr.net/npm/vue@2.0.3/dist/vue.js'></script>
+<script src="https://cdn.jsdelivr.net/npm/vue-meta/dist/vue-meta.min.js"></script>
 <script src="js/blog.js"></script>
 
 </html>

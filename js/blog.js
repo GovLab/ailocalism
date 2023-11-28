@@ -30,39 +30,56 @@ new Vue({
   data () {
     return {
       posts: [],
-      post_data: []
+      post_data: [],
+      client:'',
+      // apiURL: 'https://content.thegovlab.com/thegovlab/items/blog?fields=*,authors.team_id.*,related_posts.incoming_blog_id.*,related_projects.projects_id.*,related_publications.pub_id.*,image.*'
     }
   },
   created: function created() {
-    this.fetchPosts();
+    this.loadPost();
   },
 
   methods: {
-
-  fetchPosts()
+    loadPost()
+    {
+      self = this;
+      this.client = new DirectusSDK({
+        url: "https://content.thegovlab.com",
+        project: "/",
+        storage: window.localStorage
+      });
+      this.client.getItems(
+  'blog',
   {
-    const client = new DirectusSDK({
-      url: "https://directus.thegovlab.com/",
-      project: "thegovlab",
-      storage: window.localStorage
-    });
-    self = this;
+    limit: '-1',
+    fields: ['*.*','authors.team_id.*','image.*'],
 
-    client.getItems(
-      'blog', {
-        fields: ['*.*','authors.team_id.*','authors.team_id.picture.*','related_posts.incoming_blog_id.*','related_publications.pub_id.*','related_publications.pub_id.picture.*','related_projects.projects_id.*','related_projects.projects_id.main_picture.*'],
-        sort:"-created_on",
-        limit:30
-      })
-      .then(data => {
+    filter: { 
+      _and: [
+        {
+          status: {
+            _eq:"published"
+          }
+        },
+        {
+          categories: {
+            _contains: "ailocalism"
+          }
+        }
+      ]
 
-
-        self.posts = data.data;
-        self.post_data = self.posts.filter(items => items.categories.includes('cat_39'));
-        console.log(self.post_data);
-       
-      })
-        .catch(error => console.error(error));
+    },
   }
+).then(data => {
+  console.log(data);
+  self.posts = data.data;
+
+})
+.catch(error => console.error(error));
+
+    }
   }
 });
+
+
+

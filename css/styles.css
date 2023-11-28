@@ -996,6 +996,9 @@ justify-content: flex-start !important; ;
 .column-3 img{
   height: 80px;
 }
+.column-3 img#ai-localism-cover{
+  height: 250px;
+}
 .column-3 img#melb{
   height: 120px;
 }
