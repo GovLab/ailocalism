@@ -53,7 +53,7 @@ new Vue({
   {
     limit: '-1',
     fields: ['*.*','authors.team_id.*','image.*'],
-
+    sort:["-publication_date"],
     filter: { 
       _and: [
         {
